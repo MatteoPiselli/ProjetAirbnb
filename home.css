@@ -1,0 +1,29 @@
+body{
+    background-image: url("images/airbnb.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+}
+
+#header {
+    border: 5px solid black;
+    width: 100%;
+    max-height: 150px;
+}
+
+.navbar{
+    background-color: rgb(18, 64, 214);
+    height:40px;
+    margin-bottom:20px;
+}
+.navbar ul li{
+    float:left;
+    list-style:none
+}
+.navbar ul li a{
+	color: white;
+    line-height:40px;
+    display:block;
+    padding:0 10px;
+}

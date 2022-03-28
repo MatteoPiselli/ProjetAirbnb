@@ -1,0 +1,33 @@
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+td, th{
+    border: 1px solid black;
+    text-align: center;
+}
+caption{
+    font-size: 250%;
+}
+
+body{
+    background-image: url("images/airbnb.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav{
+    background-color: rgb(18, 64, 214);
+    height:40px;
+    margin-bottom:20px;
+}
+.nav ul li{
+    float:left;
+    list-style:none
+}
+.nav ul li a{
+	color: white;
+    line-height:40px;
+    display:block;
+    padding:0 10px;
+}
+

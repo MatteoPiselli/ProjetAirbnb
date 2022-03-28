@@ -1,0 +1,74 @@
+body{
+  background-image: url("images/airbnb.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.form{
+    text-align: center;
+    font-size: 40px;
+}
+
+input[type=text],[type=int],[type=email],[type=tel],[type=password],[type=checkbox],[type=datetime]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+  input[type=int]:focus {
+    border: 3px solid #555;
+  }
+  input[type=email]:focus {
+    border: 3px solid #555;
+  }
+  input[type=tel]:focus {
+    border: 3px solid #555;
+  }
+  input[type=password]:focus {
+    border: 3px solid #555;
+  }
+  input[type=checkbox]:focus {
+    border: 3px solid #555;
+  }
+  input[type=datetime]:focus {
+    border: 3px solid #555;
+  }
+
+
+.nav{
+    background-color: rgb(18, 64, 214);
+    height:40px;
+    margin-bottom:20px;
+}
+.nav ul li{
+    top: 0;
+    float:left;
+    list-style:none;
+}
+.nav ul li a{
+	color: white;
+    line-height:40px;
+    display:block;
+    padding:0 10px;
+}
+
+table{
+  border-collapse: collapse;
+  margin: auto;
+}
+td, th{
+  border: 1px solid black;
+  text-align: center;
+}
+caption{
+  font-size: 250%;
+}
