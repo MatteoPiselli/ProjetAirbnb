@@ -12,8 +12,8 @@
         <div class="navbar">
             <ul>
                 <li><a href="home.php">Accueil</a></li>
-                <li><a href="client.php">Table Client</a></li>
-                <li><a href="formClient.php">Formulaire Client</a></li>
+                <li><a href="client.php">Client</a></li>
+                <li><a href="regions.php">Regions</a></li>                
             </ul>
          </div>
     </header>

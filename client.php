@@ -57,7 +57,7 @@ catch(PDOException $e)
             <tbody>
             <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
                 <tr>
-                <td><a href="formClient.php" title="formulaire de la table Client"><img src="images/zenitsu.gif" width="100px" height="auto"></a></td>
+                <td><a href="formClient.php?action=create" title="formulaire de la table Client"><img src="images/zenitsu.gif" width="100px" height="auto"></a></td>
                 <td><?=htmlspecialchars($row['Id']);?></td>
                 <td><?=htmlspecialchars($row['Nom']);?></td>
                 <td><?=htmlspecialchars($row['Prenom']);?></td>
@@ -68,8 +68,9 @@ catch(PDOException $e)
                 <td><?=htmlspecialchars($row['Hote']);?></td>
                 <td><?=htmlspecialchars($row['DateCreation']);?></td>
                 <td><?=htmlspecialchars($row['DateModification']);?></td>
-                <td><a href="formClient.php?action=update&id=<?=$row['Id']?>"><img src="images/up.png" width="15%" height="auto"></a> 
-                <td><a href="formClient.php?action=delete&id=<?=$row['Id']?>"><img src="images/delete.png" width="15%" height="auto"></a>               
+                <td><a href="formClient.php?action=update&id=<?=$row['Id']?>"><img src="images/up.png" width="10%" height="auto"></a> 
+                <td><a href="formClient.php?action=delete&id=<?=$row['Id']?>"><img src="images/delete.png" width="10%" height="auto"></a> 
+            </div>             
             </tr>
             <?php endwhile; ?>
             </tbody>

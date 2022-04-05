@@ -182,8 +182,6 @@ if ($method == "GET") {
     <h1>Ajouter un Client</h1>
     <form method="POST" action="">
         <input type="hidden" name="action" value="<?= $action ?>">
-
-
         <label for="Nom">Nom</label>
         <input type="text" name="Nom" id="Nom" placeholder="Ex: Toto" size="20" maxlength="15" value="<?= $nom ?>">
         <br>

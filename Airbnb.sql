@@ -73,7 +73,7 @@ CREATE Table Photo(
   Id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
   Chemin VARCHAR(255) NOT NULL,
   Annonce_Id int,
-  Constraint PhotoAnnonce FOREIGN KEY(Annonce_Id) REFERENCES Annonce(Id)
+  Constraint FK_PhotoAnnonce FOREIGN KEY(Annonce_Id) REFERENCES Annonce(Id)
 );
 
 CREATE Table Fournir(

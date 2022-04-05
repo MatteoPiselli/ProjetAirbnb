@@ -2,8 +2,6 @@ body{
     background-image: url("images/airbnb.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
-    width: 100%;
 }
 
 #header {
