@@ -5,7 +5,7 @@ $hote = 0;
 
 $nom = $prenom = $email = $tel = $mdp = $adresse = $hote = $dc = $dm = "";
 
-include("localhostconnect.php");
+include("connexion.php");
 
 $action = "";
 if (isset($_REQUEST["action"]) && trim($_REQUEST["action"]) != "") {  //trim enleve les blanc

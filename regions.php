@@ -1,6 +1,6 @@
 <?php
 
-include("localhostconnect.php");
+include("connexion.php");
 
 $sql = "SELECT * FROM Regions";
 

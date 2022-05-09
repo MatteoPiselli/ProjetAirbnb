@@ -64,12 +64,6 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 </head>
 <body class="d-flex flex-column min-vh-100">
     <div class="container">
-
-    <!-- Navigation -->
-   
-
-    <!-- Inclusion du formulaire de connexion -->
-    <?php include_once('login.php'); ?>
         
 
     

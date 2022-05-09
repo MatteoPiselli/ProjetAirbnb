@@ -4,7 +4,7 @@ $valid = false;
 
 $nom = "";
 
-include("localhostconnect.php");
+include("connexion.php");
 
 $action = "";
 if (isset($_REQUEST["action"]) && trim($_REQUEST["action"]) != "") {  //trim enleve les blanc

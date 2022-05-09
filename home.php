@@ -13,10 +13,15 @@
             <ul>
                 <li><a href="home.php">Accueil</a></li>
                 <li><a href="client.php">Client</a></li>
-                <li><a href="regions.php">Regions</a></li>                
+                <li><a href="regions.php">Regions</a></li>            
             </ul>
          </div>
     </header>
     <body>
+    <?php
+      if(isset( $_SESSION['sess_user_name'])){
+          echo  $_SESSION['sess_user_name'];
+      }
+    ?>
     </body>
 </html>
