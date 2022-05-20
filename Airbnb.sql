@@ -36,7 +36,7 @@ CREATE Table Piece(
 CREATE Table Annonce(
   Id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
   Publication int NOT NULL,
-    Constraint CHK_Publication check(Publication 0 = or Publication = 1),
+    Constraint CHK_Publication check(Publication = 0 or Publication = 1),
   PrixHT FLOAT NOT NULL,
   Adresse Varchar(255) NOT NULL,
   DateCreation DateTime NOT NULL,

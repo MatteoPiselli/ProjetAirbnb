@@ -1,6 +1,6 @@
 <?php
 
-include("connexion.php");
+include("connection.php");
 
 $sql = "SELECT * FROM Client";
 
@@ -16,6 +16,9 @@ catch(PDOException $e)
 {
     echo $e->getMessage();  
 }
+      if(isset( $_SESSION['sess_user_name'])){
+          echo  $_SESSION['sess_user_name'];
+      }
 
 ?>
 
@@ -29,7 +32,7 @@ catch(PDOException $e)
     <header>
 		<div class="nav">
 			<ul>
-				<li><a href="home.php">Accueil</a></li>
+				<li><a href="index.php">Accueil</a></li>
                 <li><a href="formClient.php?action=create">Formulaire Client</a></li>
 			</ul>
 		</div>
@@ -77,3 +80,4 @@ catch(PDOException $e)
             </table>
     </body>
 </html>
+

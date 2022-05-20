@@ -6,8 +6,6 @@ body{
 
 #header {
     border: 5px solid black;
-    width: 100%;
-    max-height: 150px;
 }
 
 .navbar{

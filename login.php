@@ -17,7 +17,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         if ($count == 1) {
             $_SESSION['sess_user_id'] = $row['Email'];
             $_SESSION['sess_user_name'] = $row['Nom'];
-            header('location:home.php');
+            header('location:client.php');
             exit;
         } else {
             $errorMessage = "Invalid username and password!";
@@ -48,6 +48,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         <input type="password" class="form-control" id="password" name="password">
     </div>
     <button type="submit" class="btn btn-primary">Envoyer</button>
+    <a href="formClient.php?action=create">Inscription</a>
 </form>
 
 <!DOCTYPE html>

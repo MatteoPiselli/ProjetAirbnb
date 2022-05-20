@@ -1,21 +1,10 @@
 <?php
 
-include("connection.php");
+include ("regionBLL.php");
 
-$sql = "SELECT * FROM Regions";
+$regionbll = new RegionBLL();
 
-try
-{
-    $stmt = $db->query($sql);
-
-    if($stmt ==false){
-        die("Erreur");
-    }
-}
-catch(PDOException $e)
-{
-    echo $e->getMessage();  
-}
+$regions = $regionbll->listRegions();
 
 ?>
 
@@ -46,10 +35,11 @@ catch(PDOException $e)
             </tr>
             </thead>
             <tbody>
+                
             <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
                 <tr>
-                <td><?=htmlspecialchars($row['Id']);?></td>
-                <td><?=htmlspecialchars($row['Nom']);?></td>
+                <td><?=$regions;?></td>
+                <td><?=htmlspecialchars($regions['Nom']);?></td>
                 <td><a href="formRegion.php?action=update&id=<?=$row['Id']?>"><img src="images/up.png" width="10%" height="auto"></a> 
                 <td><a href="formRegion.php?action=delete&id=<?=$row['Id']?>"><img src="images/delete.png" width="10%" height="auto"></a>               
             </tr>

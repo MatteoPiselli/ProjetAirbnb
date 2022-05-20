@@ -172,7 +172,7 @@ if ($method == "GET") {
 <header>
     <div class="nav">
         <ul>
-            <li><a href="home.php">Accueil</a></li>
+            <li><a href="index.php">Accueil</a></li>
             <li><a href="client.php">Table Client</a></li>
         </ul>
     </div>
